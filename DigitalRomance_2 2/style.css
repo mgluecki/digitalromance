@@ -1,0 +1,98 @@
+
+@font-face {
+    font-family: 'hkGrotesk';
+    src: url(fonts/HKGrotesk-MediumLegacy.otf);
+}
+
+@font-face {
+    font-family: 'atApoc';
+    src: url(fonts/ATApoc-Dark.otf);
+}
+
+html,body {
+    font-size: 24px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(black, #282825);
+}
+
+
+@media screen and (max-width: 1920px) {
+  html,body { font-size: 24px; }
+  }
+
+@media screen and (max-width: 1366px) {
+  html,body { font-size: 17px; }
+  }
+
+@media screen and (max-width: 600px) {
+  html,body { font-size: 7,5px; }
+  }
+
+@media screen and (max-width: 414px) {
+  html,body { font-size: 4,6px; }
+  }
+
+@media screen and (max-width: 320px) {
+  html,body { font-size: 4px; }
+  }
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#headline_div {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+
+  background: linear-gradient(to right, black , #282825);
+  font-family: 'atApoc';
+  color: white;
+  font-size: 5rem;
+  text-shadow: 0.08rem 0.08rem 0.34rem white;
+  margin-left: 6.25rem;
+}
+
+#vertical_text {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+
+  font-family: 'atApoc';
+  color: white;
+  font-size: 5rem;
+  text-shadow: -0.08rem 0.08rem 0.34rem white;
+	transform: rotate(-90deg);
+	transform-origin: left top 0;
+  margin-top: 17rem;
+  margin-left: 0,08rem;
+}
+
+#textdiv {
+  position: absolute;
+  top: 6.25rem;
+  left: 7.5rem;
+  /* background-color: green; */
+
+  font-family: 'hkGrotesk';
+  color: white;
+  max-width: 41.7rem;
+  overflow-y: auto;
+  /* margin-top: -500px; */
+  margin-right: 5rem;
+  }
+
+#popupdiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
